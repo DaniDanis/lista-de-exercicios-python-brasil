@@ -67,10 +67,10 @@ def calcular_estatisticas(*cidades):
     quantidade_maior = max(indice)*1000    
     quantidade_menor = min(indice)*1000         
 
-    print('O maior índice de acidentes é de %s, com %.1f acidentes por mil habitantes.'%(maior_indice_acidentes,quantidade_maior))
-    print('O menor índice de acidentes é de %s, com %.1f acidentes por mil habitantes.'%(menor_indice_acidentes,quantidade_menor))
+    print('O maior índice de acidentes é de %s, com %.1f acidentes por mil carros.'%(maior_indice_acidentes,quantidade_maior))
+    print('O menor índice de acidentes é de %s, com %.1f acidentes por mil carros.'%(menor_indice_acidentes,quantidade_menor))
     print('O média de veículos por cidade é de %.0f.'%(media_veiculos))
-    print('A média de acidentes total nas cidades com menos de 150 mil habitantes é de %.1f acidentes.'%(media_acidentes))
+    print('A média de acidentes total nas cidades com menos de 150 mil carros é de %.1f acidentes.'%(media_acidentes))
 
     
     
