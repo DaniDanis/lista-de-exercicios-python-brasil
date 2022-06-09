@@ -51,9 +51,21 @@ def calcular_primos_e_divisoes(n: int) -> Tuple[str, int]:
         if contador in numero_primo:
             primos.append(contador)
             contador = contador + 1           
-        elif contador % 2 == 0 or contador % 3 == 0 or contador % 5 == 0 or contador % 7 == 0:
+        elif contador % 2 == 0:
             contador = contador + 1        
-            divisoes = divisoes + 1          
+            divisoes = divisoes + 1  
+        elif contador % 3 == 0:
+            contador = contador + 1        
+            divisoes = divisoes + 2
+        elif contador % 5 == 0:
+            contador = contador + 1        
+            divisoes = divisoes + 3
+        elif contador % 7 == 0:
+            contador = contador + 1        
+            divisoes = divisoes + 4
+        else:
+            primos.append(contador)
+            contador = contador + 1
     else:
         primos = str(primos)[1:-1]
         return primos, divisoes

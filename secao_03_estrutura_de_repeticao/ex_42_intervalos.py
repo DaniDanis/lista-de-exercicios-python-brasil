@@ -64,4 +64,4 @@ def listar_numeros_para_avaliacao():
     if numeros_51_a_75 >= 1:
         print('%.0f número(s) entre o intervalo de 51 a 75'%numeros_51_a_75)
     if numeros_76_a_100 >= 1:
-     print('%.0f número(s) entre o intervalo de 76 a 100'%numeros_76_a_100)
+        print('%.0f número(s) entre o intervalo de 76 a 100'%numeros_76_a_100)
