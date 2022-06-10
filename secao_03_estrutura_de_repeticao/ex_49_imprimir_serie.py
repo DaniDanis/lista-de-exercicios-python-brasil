@@ -53,4 +53,3 @@ def imprimir_serie(n):
             print(soma)
 
 
-

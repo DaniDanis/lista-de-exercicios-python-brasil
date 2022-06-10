@@ -21,6 +21,7 @@ Exemplo:
 
 def inverter_inteiro(numero):
     """Escreva aqui em baixo a sua solução"""
+
     contador = 0
     invertido = []
     numero_s = str(numero)
@@ -32,6 +33,3 @@ def inverter_inteiro(numero):
         while len(invertido) > contador:
           print(invertido[contador],end='')
           contador += 1
-      
-    
-
