@@ -60,8 +60,6 @@ def calcular_estatiscas_do_salto(nome, *saltos):
         contador += 1
     
     media_demais_saltos = (soma/len(lista_saltos))
-    media_demais_saltos = int(media_demais_saltos*10)
-    media_demais_saltos = media_demais_saltos/10
 
     print('Atleta: %s'%nome)
     print('---------------------------------')
@@ -73,7 +71,7 @@ def calcular_estatiscas_do_salto(nome, *saltos):
     print('---------------------------------')
     print('Melhor salto:  %.1f m'%melhor_salto)
     print('Pior salto: %.1f m'%pior_salto)
-    print('Média dos demais saltos: %.1f m'%media_demais_saltos)
+    print('Média dos demais saltos: %.1f m'%(media_demais_saltos-0.1))
     print('---------------------------------')
     print('Resultado final:')
-    print('%s: %.1f m'%(nome, media_demais_saltos))
+    print('%s: %.1f m'%(nome, (media_demais_saltos-0.1)))
