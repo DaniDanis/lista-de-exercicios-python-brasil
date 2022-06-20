@@ -37,3 +37,19 @@ Faça um programa que mostre os n termos da Série a seguir:
 
 def imprimir_serie(n):
     """Escreva aqui em baixo a sua solução"""
+    m = 1
+    contador = 1
+    soma = 0
+    print('S = ',end='')
+    while n > contador:
+        print('%.0f/%.0f'%(contador,m),end=' + ')
+        soma = soma + (contador/m)
+        contador += 1
+        m += 2
+        if n == contador:
+            soma = soma + (contador/m)
+            print('%.0f/%.0f'%(contador,m))
+            print('soma = ',end='')
+            print(soma)
+
+
