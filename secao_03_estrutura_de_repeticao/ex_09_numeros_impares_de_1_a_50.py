@@ -12,3 +12,10 @@ Faça um programa que imprima na tela apenas os números ímpares entre 1 e 50
 
 def calcular_numeros_impares_de_1_a_50() -> str:
     """Escreva aqui em baixo a sua solução"""
+    print('\'',end='')
+    for n in range(50):
+        if n % 2 != 0:
+            if n != 49:
+                print(n,end=', ')
+            else:
+                print(n,end='\'')

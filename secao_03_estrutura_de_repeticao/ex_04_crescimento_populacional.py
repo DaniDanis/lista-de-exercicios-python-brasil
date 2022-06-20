@@ -16,3 +16,17 @@ de crescimento.
 
 def calcular_ano_ultrapassagem_populacional() -> str:
     """Escreva aqui em baixo a sua solução"""
+
+    populacao_a = 80000
+    taxa_crescimento_a = 3
+    taxa_crescimento_a_em_porcentagem = taxa_crescimento_a/100
+    populacao_b = 200000
+    taxa_crescimento_b = 1.5
+    taxa_Crescimento_b_em_porcentagem = taxa_crescimento_b/100
+    anos = 0
+    while populacao_a < populacao_b:
+        populacao_a = populacao_a + (populacao_a*taxa_crescimento_a_em_porcentagem)
+        populacao_b = populacao_b + (populacao_b*taxa_Crescimento_b_em_porcentagem)
+        anos += 1
+    
+    return 'População de A, depois de %i ano(s) será de %i pessoas, superando a de B, que será de %i pessoas'%(anos,populacao_a,populacao_b)

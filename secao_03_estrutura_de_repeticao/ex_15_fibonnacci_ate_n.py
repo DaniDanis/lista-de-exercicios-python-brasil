@@ -25,3 +25,17 @@ n−ésimo termo.
 
 def calcular_serie_de_fibonacci(n: int) -> str:
     """Escreva aqui em baixo a sua solução"""
+    fibonnaci = [1, 1]
+    #Formando Fibonnaci
+    for i in range(n-2):
+        fibonnaci.append(fibonnaci[-2]+fibonnaci[-1])
+    #Printando Fibonnaci
+    print('\'',end='')
+    for x in range(len(fibonnaci)):
+        if x == len(fibonnaci)-1:
+            print(fibonnaci[x],end="'")
+        elif x == 0 and n == 1:
+            None
+        else:
+            print(fibonnaci[x],end=', ')
+    

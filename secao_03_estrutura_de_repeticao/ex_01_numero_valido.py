@@ -43,8 +43,6 @@ def obter_numero_valido():
                 print(nota)
                 break
             else:
-                print('Numero inválido: %i'%nota)
-                nota = input("Digite uma nota entre zero e dez")
+                print('Número inválido: %i'%nota)
         else:
-            print('Numero inválido: %s'%nota)
-            nota = input("Digite uma nota entre zero e dez")
+            print('Número inválido: %s'%nota)
